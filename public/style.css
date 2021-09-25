@@ -1,0 +1,100 @@
+*{
+    box-sizing: border-box;
+}
+
+body,html{
+    margin: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.container{
+    background: url(https://as2.ftcdn.net/v2/jpg/02/38/17/95/500_F_238179540_YpuKG074NwzMcVlRvacvCH03Nm4djFu8.jpg);
+    height: 100vh;
+    width: 500px;
+    /* display: flex; */
+    background-repeat: cover;
+    position: relative;
+}
+
+.chat-background{
+    height: 94%;
+    overflow: auto;
+}
+
+.text-message{
+    background: white;
+    width: 94%;
+    /* display: flex;
+    justify-content: space-between;
+    align-items: unsafe; */
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    left: 13px;
+    border-radius: 10px;
+    top: 700px;
+   
+}
+
+#type-message{
+    width: 89%;
+    height: 32px;
+    border-radius: 10px;
+    border: 2px solid purple;
+}
+
+.send-message{
+    background: purple;
+    padding: 5px;
+    border-radius: 6px;
+    float: right;
+    clear: both;
+    color: whitesmoke;
+    margin: 2px;
+    max-width: 300px;
+    /* min-width: 100px */
+}
+
+.received-message{
+    width: max-content;
+    padding: 5px;
+    border-radius: 6px;
+    background: lightgray;
+    clear: both;
+    margin: 2px;
+    max-width: 300px;
+}
+#send{
+    width: 10%;
+    height: 29px;
+    background: #fff;
+    border-radius: 7px;
+    color: purple;
+    border: none;
+}
+.chat-name{
+    font-weight: bold;
+    font-size: small;
+}
+
+.join{
+    padding: 5px;
+    border-radius: 6px;
+    background: lightskyblue;
+    clear: both;
+    margin: 2px;
+    text-align: center;
+}
+
+.leave{
+    padding: 5px;
+    border-radius: 6px;
+    background: orange;
+    clear: both;
+    margin: 2px;
+    text-align: center;
+}

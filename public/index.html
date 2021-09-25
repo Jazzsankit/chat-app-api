@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="stylesheet" href="./style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+    
+        </div>
+    
+        <div class="chat-background">
+            <!-- <div class="send-message">
+                <div class="chat-name">Ankit</div>
+                <div class="chat-message"> Hello I an Ankit</div>
+            </div>
+            <div class="join">Ankit joined the chat !!</div>
+            <div class="received-message">
+                <div class="chat-name">Ashu</div>
+                <div class="chat-message"> Hello I an wakao</div>
+                
+            </div>
+            <div class="leave">Ankit left the chat !!</div>
+            <div class="send-message">
+                <div class="chat-name">Ankit</div>
+                <div class="chat-message"> Hello I an Ankit</div>
+            </div>
+            <div class="received-message">
+                <div class="chat-name">Ashu</div>
+                <div class="chat-message"> Hello I an wakao</div>
+               
+            </div> -->
+        </div>
+    
+        <div class="text-message">
+            <input type="text" name="" id="type-message"  placeholder="Your Messsage" onkeydown = "if (event.keyCode == 13)document.getElementById('send').click()">
+            <button id="send"><i class="fas fa-paper-plane"></i></button>
+        </div>  
+    </div>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.2.0/socket.io.js" integrity="sha512-WL6WGKMPBiM9PnHRYIn5YEtq0Z8XP4fkVb4qy7PP4vhmYQErJ/dySyXuFIMDf1eEYCXCrQrMJfkNwKc9gsjTjA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script>
+    const socket=io.connect("http://localhost:3000")
+</script>
+<script src="./script.js"></script>
+<script src="./sockett.js"></script>
+</html>
